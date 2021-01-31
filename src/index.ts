@@ -21,3 +21,5 @@ export class InitTS {
     }
 
 }
+
+console.log(InitTS.helloWorld())
