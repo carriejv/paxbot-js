@@ -1,13 +1,16 @@
 import express from 'express'
 import bodyParser from 'body-parser'
 import multer from 'multer'
+import {tech} from '../common/tech.js'
 
-export function fe(){
+const technician = tech()
+
+export async function fe(){
     const app = express()
     const upload = multer()
     
     //Various variables influencing startup
-    const port = 3000||process.env.EXP_PORT
+    const port = 3000||await technician.read('EXP_PORT')
     app.set('view engine', 'pug')
     app.set('views', 'frontend/views')
     app.use(bodyParser.json())
