@@ -1,3 +1,5 @@
+import {fe} from './frontend/fe';
+
 /**
     *  Copyright 2021 Carrie J V
     *
@@ -23,3 +25,4 @@ export class InitTS {
 }
 
 console.log(InitTS.helloWorld())
+fe()
