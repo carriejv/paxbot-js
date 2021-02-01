@@ -1,3 +1,5 @@
+import {dis} from './discord/dis';
+import {fe} from './frontend/fe';
 /**
     *  Copyright 2021 Carrie J V
     *
@@ -13,11 +15,5 @@
     *  See the License for the specific language governing permissions and
     *  limitations under the License.
     */
-
-export class InitTS {
-
-    public static helloWorld(): string {
-        return 'Hello, World.';
-    }
-
-}
+fe()
+dis()
